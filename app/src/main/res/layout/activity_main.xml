@@ -7,13 +7,53 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-36dp">
+
+        <EditText
+            android:id="@+id/input_id"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="아이디"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="성명"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="이메일"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/input_age"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="나이"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btn_input"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="입력" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
