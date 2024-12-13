@@ -14,11 +14,17 @@ public class SQLite_Helper extends SQLiteOpenHelper {
     // 테이블 생성 SQL
     private static final String USER_TABLE =
             "CREATE TABLE users (" +
-                    "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                    "user_id TEXT, " +
+                    "u_id INTEGER PRIMARY KEY AUTOINCREMENT, " +
                     "name TEXT, " +
                     "email TEXT, " +
                     "age INTEGER);";
+    private static final String MUSIC_TABLE =
+            "CREATE TABLE Musics (" +
+                    "s_id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                    "singer TEXT, " +
+                    "youtube TEXT, " +
+                    "info TEXT, " +
+                    "genre TEXT);";
     public SQLite_Helper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
@@ -30,6 +36,7 @@ public class SQLite_Helper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(USER_TABLE); // 테이블 생성
+        db.execSQL(MUSIC_TABLE);
     }
 
     @Override

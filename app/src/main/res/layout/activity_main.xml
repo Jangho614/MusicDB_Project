@@ -53,6 +53,12 @@
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:text="입력" />
+        <Button
+            android:id="@+id/btn_fetch"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="조회"/>
 
     </LinearLayout>
 
